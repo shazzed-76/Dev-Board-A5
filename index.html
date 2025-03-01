@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google fonts cdn link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+
+    <!-- daisyUi cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .poppins-font {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .align-center {
+            align-items: center;
+        }
+    </style>
+    <title>Dev Board</title>
+</head>
+
+<body class="poppins-font bg-[#F4F7FF] min-h-screen">
+    <header class="max-w-screen-xl mx-auto pt-5">
+        <nav class="flex justify-between align-center p-5 bg-white rounded-xl">
+            <!-- logo -->
+            <div class="flex gap-2 align-center">
+                <img class="w-11 h-11" src="assets/logo.png" alt="">
+                <h1 class="text-3xl font-light text-black">
+                    Dev
+                    <span class="font-bold">
+                        Board
+                    </span>
+                </h1>
+            </div>
+            <div class="flex w-44 justify-between align-center">
+                <div class="flex align-center gap-4 bg-[#F4F7FF] px-4 py-3 rounded-full">
+                    <img class="w-[25px] h-[25px]" src="assets/checkbox.png" alt="">
+                    <span class="font-bold text-2xl">
+                        23
+                    </span>
+                </div>
+                <div>
+                    <img class="w-[30px] h-[30px]" src="assets/theme-btn.png" alt="">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+
+</body>
+
+</html>
