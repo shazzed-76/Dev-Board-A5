@@ -42,10 +42,11 @@
 
 
     <title>Dev Board</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
 </head>
 
-<body class="poppins-font bg-[#F4F7FF] min-h-screen ">
-    <header class="max-w-screen-xl mx-auto pt-5">
+<body class="poppins-font bg-[#F4F7FF] min-h-screen pt-5 pb-20">
+    <header class="max-w-screen-xl mx-auto ">
         <nav class="flex justify-between items-center p-5 bg-white rounded-xl">
             <!-- logo -->
             <div class="flex gap-2 items-center">
@@ -61,11 +62,11 @@
                 <div class="flex items-center gap-4 bg-[#F4F7FF] px-4 py-3 rounded-full">
                     <img class="w-[25px] h-[25px]" src="assets/checkbox.png" alt="">
                     <span class="font-bold text-2xl">
-                        23
+                        0<span id="completed-task">0</span>
                     </span>
                 </div>
                 <div>
-                    <img class="w-[30px] h-[30px]" src="assets/theme-btn.png" alt="">
+                    <img class="w-[30px] h-[30px]" src="assets/theme-btn.png" alt="" id="theme-btn">
                 </div>
             </div>
         </nav>
@@ -77,25 +78,25 @@
             <div class="grid grid-cols-4 gap-4 pb-3 border-b border-dashed border-primary-color">
 
                 <!-- first child div -->
-                <div class="bg-[#F4F7FF] flex justify-center items-center gap-5  rounded-xl">
+                <div class="bg-[#F4F7FF] flex justify-center items-center gap-5  rounded-xl px-3">
 
                     <div class="bg-white flex justify-center items-center rounded-full w-[50px] h-[50px]">
                         <img class="w-[25px] h-[25px]" src="assets/checkbox.png" alt="">
                     </div>
 
                     <div>
-                        <h3 class="text-lg font-normal text-black">
+                        <h3 class="text-sm font-normal text-black">
                             Task Assigned
                         </h3>
                         <div class="text-xl font-bold text-black">
-                            05
+                            0<span id="task-number">6</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- second child div -->
                 <div
-                    class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] col-span-2 px-[40px] py-[20px] rounded-xl flex items-center gap-5">
+                    class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] col-span-2 px-[30px] py-[15px] rounded-xl flex items-center gap-5">
                     <div>
                         <img class="w-[70px]" src="assets/board.png" alt="">
 
@@ -110,7 +111,7 @@
                 </div>
 
                 <!-- third child div -->
-                <div class="bg-[#F4F7FF] flex justify-center items-center rounded-xl gap-5">
+                <div class="bg-[#F4F7FF] flex justify-center items-center rounded-xl gap-5 px-3">
                     <div class="bg-white flex justify-center items-center rounded-full w-[50px] h-[50px]">
                         <img src="assets/calender.png" alt="">
                     </div>
@@ -125,14 +126,14 @@
             <!-- card container -->
             <div class="grid grid-cols-3 gap-4 pt-5">
 
-                <!-- first child -->
+                <!-- first card  -->
                 <div class="bg-primary-bg-color p-5 rounded-xl">
 
                     <div class="text-[#00303C] pb-3 border-b border-dashed  border-primary-color ">
                         <h4 class="font-normal text-[16px] py-[8px] px-[16px] bg-white inline-block rounded-full mb-4">
                             ShopEase
                         </h4>
-                        <h2 class="font-medium text-[24px] mb-4">
+                        <h2 class="font-medium text-[20px] mb-4">
                             Fix Mobile Button Issue
                         </h2>
                         <p class="font-normal text-[14px] bg-white  rounded-xl p-3 mb-4">Debug using Chrome
@@ -148,30 +149,31 @@
                                 Deadline
                             </small>
 
-                            <h4 class="text-[16px] font-semibold">
+                            <h4 class="text-sm font-semibold">
                                 21 March 2025
                             </h4>
                         </div>
 
                         <div>
                             <button
-                                class="bg-[#3752FD] text-white text-[16px] fon-semibold px-[20px] py-[10px] rounded-xl">
+                                class="bg-[#3752FD] text-white text-[14px] fon-semibold px-[16px] py-[10px] rounded-xl complete-btn"
+                                id="btn-1">
                                 completed
                             </button>
                         </div>
                     </div>
 
                 </div>
-                <!-- first child -->
+
+                <!-- second card -->
                 <div class="bg-primary-bg-color p-5 rounded-xl">
 
                     <div class="text-[#00303C] pb-3 border-b border-dashed  border-primary-color ">
                         <h4 class="font-normal text-[16px] py-[8px] px-[16px] bg-white inline-block rounded-full mb-4">
-                            ShopEase
+                            CloudSync
                         </h4>
-                        <h2 class="font-medium text-[24px] mb-4">
-                            Fix Mobile Button Issue
-                        </h2>
+                        <h2 class="font-medium text-[20px] mb-4">
+                            Add Dark Mode </h2>
                         <p class="font-normal text-[14px] bg-white  rounded-xl p-3 mb-4">Debug using Chrome
                             DevTools, check for overlapping elements,
                             and ensure onClick works
@@ -185,30 +187,30 @@
                                 Deadline
                             </small>
 
-                            <h4 class="text-[16px] font-semibold">
-                                21 March 2025
-                            </h4>
+                            <h4 class="text-sm font-semibold">
+                                21 March 2025 </h4>
                         </div>
 
                         <div>
                             <button
-                                class="bg-[#3752FD] text-white text-[16px] fon-semibold px-[20px] py-[10px] rounded-xl">
+                                class="bg-[#3752FD] text-white text-[14px] fon-semibold px-[16px] py-[10px] rounded-xl complete-btn"
+                                id="btn-2">
                                 completed
                             </button>
                         </div>
                     </div>
 
                 </div>
-                <!-- first child -->
+
+                <!-- third card -->
                 <div class="bg-primary-bg-color p-5 rounded-xl">
 
                     <div class="text-[#00303C] pb-3 border-b border-dashed  border-primary-color ">
                         <h4 class="font-normal text-[16px] py-[8px] px-[16px] bg-white inline-block rounded-full mb-4">
-                            ShopEase
+                            SwiftPay
                         </h4>
-                        <h2 class="font-medium text-[24px] mb-4">
-                            Fix Mobile Button Issue
-                        </h2>
+                        <h2 class="font-medium text-[20px] mb-4">
+                            Optimize Home page </h2>
                         <p class="font-normal text-[14px] bg-white  rounded-xl p-3 mb-4">Debug using Chrome
                             DevTools, check for overlapping elements,
                             and ensure onClick works
@@ -222,30 +224,30 @@
                                 Deadline
                             </small>
 
-                            <h4 class="text-[16px] font-semibold">
+                            <h4 class="text-sm font-semibold">
                                 21 March 2025
                             </h4>
                         </div>
 
                         <div>
                             <button
-                                class="bg-[#3752FD] text-white text-[16px] fon-semibold px-[20px] py-[10px] rounded-xl">
+                                class="bg-[#3752FD] text-white text-[14px] fon-semibold px-[16px] py-[10px] rounded-xl complete-btn"
+                                id="btn-6">
                                 completed
                             </button>
                         </div>
                     </div>
 
                 </div>
-                <!-- first child -->
+
+                <!-- fourth card -->
                 <div class="bg-primary-bg-color p-5 rounded-xl">
 
                     <div class="text-[#00303C] pb-3 border-b border-dashed  border-primary-color ">
                         <h4 class="font-normal text-[16px] py-[8px] px-[16px] bg-white inline-block rounded-full mb-4">
-                            ShopEase
-                        </h4>
-                        <h2 class="font-medium text-[24px] mb-4">
-                            Fix Mobile Button Issue
-                        </h2>
+                            Meta </h4>
+                        <h2 class="font-medium text-[20px] mb-4">
+                            Add new emoji 🤲 </h2>
                         <p class="font-normal text-[14px] bg-white  rounded-xl p-3 mb-4">Debug using Chrome
                             DevTools, check for overlapping elements,
                             and ensure onClick works
@@ -259,30 +261,30 @@
                                 Deadline
                             </small>
 
-                            <h4 class="text-[16px] font-semibold">
+                            <h4 class="text-sm font-semibold">
                                 21 March 2025
                             </h4>
                         </div>
 
                         <div>
                             <button
-                                class="bg-[#3752FD] text-white text-[16px] fon-semibold px-[20px] py-[10px] rounded-xl">
+                                class="bg-[#3752FD] text-white text-[14px] fon-semibold px-[16px] py-[10px] rounded-xl complete-btn"
+                                id="btn-6">
                                 completed
                             </button>
                         </div>
                     </div>
 
                 </div>
-                <!-- first child -->
+
+                <!-- fifth card -->
                 <div class="bg-primary-bg-color p-5 rounded-xl">
 
                     <div class="text-[#00303C] pb-3 border-b border-dashed  border-primary-color ">
                         <h4 class="font-normal text-[16px] py-[8px] px-[16px] bg-white inline-block rounded-full mb-4">
-                            ShopEase
-                        </h4>
-                        <h2 class="font-medium text-[24px] mb-4">
-                            Fix Mobile Button Issue
-                        </h2>
+                            Google LLC </h4>
+                        <h2 class="font-medium text-[20px] mb-4">
+                            Integrate OpenAI API </h2>
                         <p class="font-normal text-[14px] bg-white  rounded-xl p-3 mb-4">Debug using Chrome
                             DevTools, check for overlapping elements,
                             and ensure onClick works
@@ -296,30 +298,30 @@
                                 Deadline
                             </small>
 
-                            <h4 class="text-[16px] font-semibold">
+                            <h4 class="text-sm font-semibold">
                                 21 March 2025
                             </h4>
                         </div>
 
                         <div>
                             <button
-                                class="bg-[#3752FD] text-white text-[16px] fon-semibold px-[20px] py-[10px] rounded-xl">
+                                class="bg-[#3752FD] text-white text-[14px] fon-semibold px-[16px] py-[10px] rounded-xl complete-btn"
+                                id="btn-6">
                                 completed
                             </button>
                         </div>
                     </div>
 
                 </div>
-                <!-- first child -->
+
+                <!-- sixth card -->
                 <div class="bg-primary-bg-color p-5 rounded-xl">
 
                     <div class="text-[#00303C] pb-3 border-b border-dashed  border-primary-color ">
                         <h4 class="font-normal text-[16px] py-[8px] px-[16px] bg-white inline-block rounded-full mb-4">
-                            ShopEase
-                        </h4>
-                        <h2 class="font-medium text-[24px] mb-4">
-                            Fix Mobile Button Issue
-                        </h2>
+                            Glassdoar </h4>
+                        <h2 class="font-medium text-[20px] mb-4">
+                            Improve Job searching </h2>
                         <p class="font-normal text-[14px] bg-white  rounded-xl p-3 mb-4">Debug using Chrome
                             DevTools, check for overlapping elements,
                             and ensure onClick works
@@ -333,14 +335,15 @@
                                 Deadline
                             </small>
 
-                            <h4 class="text-[16px] font-semibold">
+                            <h4 class="text-sm font-semibold">
                                 21 March 2025
                             </h4>
                         </div>
 
                         <div>
                             <button
-                                class="bg-[#3752FD] text-white text-[16px] fon-semibold px-[20px] py-[10px] rounded-xl">
+                                class="bg-[#3752FD] text-white text-[14px] fon-semibold px-[16px] py-[10px] rounded-xl complete-btn"
+                                id="btn-6">
                                 completed
                             </button>
                         </div>
@@ -351,8 +354,33 @@
             </div>
             <!-- card section end -->
         </section>
-        <aside></aside>
+        <aside class="bg-white p-5 w-[350px] rounded-xl">
+            <!-- history btn and icon container -->
+            <div class="pb-4 border-b border-dashed border-primary-color">
+                <div class="flex justify-center items-center pb-4 ">
+                    <img class="w-[28px] pr-2" src="assets/activity.png" alt="">
+                    <span class="text-[20px] font-medium text-[#00303C]">Activity Log</span>
+                </div>
+
+                <div class="flex justify-center items-center">
+                    <button class="bg-[#3752FD] text-white text-[16px] fon-semibold px-[20px] py-[10px] rounded-xl"
+                        id="clear-btn">
+                        Clear History
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- message container -->
+            <div class="pt-4" id="history-box">
+
+            </div>
+        </aside>
     </main>
+
+
+    <script src="script/dev-board.js"></script>
+    <script src="script/utilities.js"></script>
 
 </body>
 
