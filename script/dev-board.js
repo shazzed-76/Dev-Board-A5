@@ -19,13 +19,16 @@ for (const btn of completeBtn) {
         const totalCompletedTask = completeTask + 1;
        document.getElementById('completed-task').innerText = totalCompletedTask;
 
+       const currentTime = new Date().toLocaleTimeString();
+       
+
        
        const historyBox = document.getElementById('history-box');
        
        const p = document.createElement('p');
        p.classList.add('bg-[#F4F7FF]', 'p-2', 'rounded-lg', 'mb-3', 'text-sm')
 
-       p.innerText = ` You have completed the task at 1 am `;
+       p.innerText = ` You have completed the task at ${currentTime} `;
       
         
 
@@ -46,7 +49,10 @@ for (const btn of completeBtn) {
     })
 }
 
- 
+const element = document.getElementById('current-date');
+const currentDate = new Date().toDateString();
+
+element.innerText = currentDate;
 
 
 // add event handler on the history button
