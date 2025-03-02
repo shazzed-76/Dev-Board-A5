@@ -5,4 +5,8 @@ function getId (id) {
     return convertToInt
 }
 
-
+function getIdByName (id) {
+   const element = document.getElementById(id);
+   return element;
+  
+}

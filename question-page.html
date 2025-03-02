@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google fonts cdn link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+
+    <!-- daisyUi cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary-color': 'rgba(55, 82, 253, 0.2)',
+                        'primary-bg-color': '#F4F7FF'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        .poppins-font {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+
+
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <title>Dev Board</title>
+
+</head>
+
+<body class="bg-primary-bg-color min-h-screen py-5">
+    <header class="max-w-screen-xl mx-auto ">
+        <nav class="flex justify-between items-center p-5 bg-white rounded-xl">
+            <!-- logo -->
+            <div class="flex gap-2 items-center">
+                <img class="w-11 h-11" src="assets/logo.png" alt="">
+                <h1 class="text-3xl font-light text-black">
+                    Dev
+                    <span class="font-bold">
+                        Board
+                    </span>
+                </h1>
+            </div>
+            <div class="">
+                <button
+                    class="bg-[#3752FD] text-white text-[14px] font-bold px-[16px] py-[10px] rounded-lg complete-btn"
+                    id="back-btn">
+                    Back to desk
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="max-w-screen-xl mx-auto">
+        <h2 class="text-center text-2xl font-bold text-black py-5">
+            Blogs
+        </h2>
+        <div class="bg-white rounded-md mb-5">
+
+            <h3 class="p-5 border-b border-dashed dorder-primary-color text-xl font-bold text-black">
+                Question-1: What are the different ways to select an element in the DOM?
+            </h3>
+
+            <div class="p-5 text-lg font-semibold text-gray-400">
+                <ol>
+                    <li>1. Using getElementById.</li>
+                    <li>2. Using getElementsByClassName.</li>
+                    <li>3. Using getElementsByTagName.</li>
+                    <li>4. Using querySelector.</li>
+                    <li>5. Using querySelectorAll.</li>
+                </ol>
+
+            </div>
+        </div>
+
+        <div class="bg-white rounded-md mb-5">
+
+            <h3 class="p-5 border-b border-dashed dorder-primary-color text-xl font-bold text-black">
+                Question-2: What is the difference between innerHTML, innerText, and textContent ?
+            </h3>
+
+            <div class="p-5 text-lg font-semibold text-gray-400">
+                <ul>
+                    <li>innerHTML: this property is use for get and set the element.innerHTML get the element with tag
+                        and
+                        text.Using this property you can creat tags and text.</li>
+                    <li>innerText: this property get the only text inside the element and by using this property you can
+                        set the
+                        text of and element.</li>
+                    <li> textContent: textContent reads text as it is in the markup. It also returns all text, whether
+                        it's
+                        rendered on screen or not.</li>
+                </ul>
+
+
+            </div>
+        </div>
+
+        <div class="bg-white rounded-md mb-5">
+
+            <h3 class="p-5 border-b border-dashed dorder-primary-color text-xl font-bold text-black">
+                Question-3: What is event delegation in the DOM?
+            </h3>
+
+            <div class="p-5 text-lg font-semibold text-gray-400">
+                Event delegation is a technique where you attach a single event listener to a parent element, allowing
+                it to handle events
+                triggered on its child elements, instead of adding separate listeners to each child element;
+            </div>
+        </div>
+
+        <div class="bg-white rounded-md mb-5">
+
+            <h3 class="p-5 border-b border-dashed dorder-primary-color text-xl font-bold text-black">
+                Question-4: What is event bubbling in the DOM?
+            </h3>
+
+            <div class="p-5 text-lg font-semibold text-gray-400">
+                Event bubbling is the process where an event triggered on a child element propagates upwards through the
+                DOM hierarchy, triggering event handlers on its parent elements until it reaches the topmost element
+            </div>
+        </div>
+
+        <div class="bg-white rounded-md mb-5">
+
+            <h3 class="p-5 border-b border-dashed dorder-primary-color text-xl font-bold text-black">
+                Question-5: How do you create, add, and remove elements using JavaScript?
+            </h3>
+
+            <div class="p-5 text-lg font-semibold text-gray-400">
+                <ul>
+                    <li>creatElement: const p = document.creatElement('p');</li>
+                    <li>removeElement: const element = document.getelementbyId('id name');
+                        element.removeElement();</li>
+                </ul>
+
+
+            </div>
+        </div>
+    </main>
+
+
+    <script src="script/blog.js"></script>
+</body>
+
+</html>

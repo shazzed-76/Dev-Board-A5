@@ -4,6 +4,7 @@ const completeBtn = document.getElementsByClassName('complete-btn');
 for (const btn of completeBtn) {
     btn.addEventListener('click', function () {        
         
+        btn.style.opacity = '.20';
         const taskNumber = getId('task-number');
         const completeTask = getId('completed-task');
         
@@ -74,3 +75,34 @@ document.getElementById('theme-btn').addEventListener('click', function () {
 })
 
 
+// add event handler on the blog btn
+document.getElementById('blog-btn').addEventListener('click', function () {
+   window.location.href = 'question-page.html'
+})
+
+
+getIdByName('btn-1').addEventListener('click', function () {
+    getIdByName('btn-1').disabled = true;    
+ });
+
+getIdByName('btn-2').addEventListener('click', function () {
+    getIdByName('btn-2').disabled = true;    
+ });
+
+getIdByName('btn-3').addEventListener('click', function () {
+    getIdByName('btn-3').disabled = true;    
+ });
+
+getIdByName('btn-4').addEventListener('click', function () {
+    getIdByName('btn-4').disabled = true;    
+ });
+
+getIdByName('btn-5').addEventListener('click', function () {
+    getIdByName('btn-5').disabled = true;    
+ });
+
+getIdByName('btn-6').addEventListener('click', function () {
+    getIdByName('btn-6').disabled = true;    
+ });
+
+ 
